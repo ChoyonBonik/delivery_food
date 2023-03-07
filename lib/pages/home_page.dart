@@ -12,31 +12,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.transparent,
       appBar: _appBar(),
-      // appBar: AppBar(
-      //
-      //   title: Text('Delivery Food'),
-      //   backgroundColor: Colors.transparent,
-      //   elevation: 0,
-      //   centerTitle: true,
-      //   actions: [
-      //     Container(
-      //       width: 100,
-      //       height: 100,
-      //       decoration: BoxDecoration(
-      //         color: Colors.deepOrange,
-      //         borderRadius: BorderRadius.circular(12),
-      //       ),
-      //       child: Text('600'),
-      //     )
-      //     // CircleAvatar(
-      //     //   child: Text('600'),
-      //     //   backgroundColor: Colors.deepOrangeAccent,
-      //     //   radius: 25,
-      //     // ),
-      //   ],
-      // ),
       drawer: Drawer(),
       body: Container(
         decoration: BoxDecoration(
@@ -288,149 +264,334 @@ class _HomePageState extends State<HomePage> {
                         )
                       ],
                     ),
-                    SizedBox(
-                      height: 8,
-                    ),
+                    // SizedBox(
+                    //   height: 8,
+                    // ),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
                           InkWell(
                             onTap: () {},
-                            child: Container(
-                              height: 250,
-                              width: 200,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(25),
-                                color: Colors.white,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(20.0),
-                                child: Column(
+                            child: SizedBox(
+                                height: 280,
+                                width: 220,
+                                child: Stack(
                                   children: [
-                                    Image(
-                                        image: AssetImage('images/cakee.png'),
-                                        height: 150,
-                                        width: 150),
-                                    SizedBox(
-                                      height: 10,
+                                    Center(
+                                      child: Container(
+                                        height: 190,
+                                        width: 150,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(18),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 65,
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              Text('Yammy',
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500,
+                                                  )),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                'Pizza',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                '100',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: Colors
+                                                      .deepOrange.shade500,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
                                     ),
-                                    Text('Cake'),
-                                    SizedBox(
-                                      height: 5,
+                                    Positioned(
+                                      top: 20,
+                                      left: 5,
+                                      child:
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.transparent,
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 5,
+                                              )
+                                            ],
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    'images/pizza.png'),
+                                                fit: BoxFit.fill)),
+                                        height: 85,
+                                        width: 85,
+                                      ),
                                     ),
-                                    Text('600'),
                                   ],
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
+                                )),
                           ),
                           InkWell(
                             onTap: () {},
-                            child: Container(
-                              height: 250,
-                              width: 200,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(25),
-                                color: Colors.white,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(20.0),
-                                child: Column(
+                            child: SizedBox(
+                                height: 280,
+                                width: 220,
+                                child: Stack(
                                   children: [
-                                    Image(
-                                        image: AssetImage('images/burgerr.png'),
-                                        height: 150,
-                                        width: 150),
-                                    SizedBox(
-                                      height: 10,
+                                    Center(
+                                      child: Container(
+                                        height: 190,
+                                        width: 150,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(18),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 65,
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              Text('Yammy',
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500,
+                                                  )),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                'Pizza',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                '100',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: Colors
+                                                      .deepOrange.shade500,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
                                     ),
-                                    Text('Burger'),
-                                    SizedBox(
-                                      height: 5,
+                                    Positioned(
+                                      top: 20,
+                                      left: 5,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 5,
+                                              )
+                                            ],
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    'images/burgerr.png'),
+                                                fit: BoxFit.fitHeight)),
+                                        height: 85,
+                                        width: 85,
+                                      ),
                                     ),
-                                    Text('600')
                                   ],
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
+                                )),
                           ),
                           InkWell(
                             onTap: () {},
-                            child: Container(
-                              height: 250,
-                              width: 200,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(25),
-                                color: Colors.white,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(20.0),
-                                child: Column(
+                            child: SizedBox(
+                                height: 280,
+                                width: 220,
+                                child: Stack(
                                   children: [
-                                    Image(
-                                        image: AssetImage('images/pizza.png'),
-                                        height: 150,
-                                        width: 150),
-                                    SizedBox(
-                                      height: 10,
+                                    Center(
+                                      child: Container(
+                                        height: 190,
+                                        width: 150,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(18),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 65,
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              Text('Yammy',
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500,
+                                                  )),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                'Pizza',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                '100',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: Colors
+                                                      .deepOrange.shade500,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
                                     ),
-                                    Text('Pizza'),
-                                    SizedBox(
-                                      height: 5,
+                                    Positioned(
+                                      top: 20,
+                                      left: 5,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 5,
+                                              )
+                                            ],
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    'images/cakee.png'),
+                                                fit: BoxFit.cover)),
+                                        height: 85,
+                                        width: 85,
+                                      ),
                                     ),
-                                    Text('600')
                                   ],
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
+                                )),
                           ),
                           InkWell(
                             onTap: () {},
-                            child: Container(
-                              height: 250,
-                              width: 200,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(25),
-                                color: Colors.white,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(20.0),
-                                child: Column(
+                            child: SizedBox(
+                                height: 280,
+                                width: 220,
+                                child: Stack(
                                   children: [
-                                    Image(
-                                        image:
-                                            AssetImage('images/sandwich.png'),
-                                        height: 150,
-                                        width: 150),
-                                    SizedBox(
-                                      height: 10,
+                                    Center(
+                                      child: Container(
+                                        height: 190,
+                                        width: 150,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(18),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 65,
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              Text('Yammy',
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500,
+                                                  )),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                'Pizza',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                '100',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: Colors
+                                                      .deepOrange.shade500,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
                                     ),
-                                    Text('Sandwich'),
-                                    SizedBox(
-                                      height: 5,
+                                    Positioned(
+                                      top: 20,
+                                      left: 5,
+                                      child:
+                                      Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 5,
+                                              )
+                                            ],
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    'images/sandwich.png'),
+                                                fit: BoxFit.cover)),
+                                        height: 85,
+                                        width: 85,
+                                      ),
                                     ),
-                                    Text('600')
                                   ],
-                                ),
-                              ),
-                            ),
+                                )),
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 40,
-                    ),
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
