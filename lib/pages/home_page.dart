@@ -331,18 +331,9 @@ class _HomePageState extends State<HomePage> {
                                       child:
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.transparent,
-                                            borderRadius:
-                                                BorderRadius.circular(50),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                color: Colors.grey,
-                                                blurRadius: 5,
-                                              )
-                                            ],
                                             image: DecorationImage(
                                                 image: AssetImage(
-                                                    'images/pizza.png'),
+                                                    'images/fi.png'),
                                                 fit: BoxFit.fill)),
                                         height: 85,
                                         width: 85,
