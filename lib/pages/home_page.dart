@@ -1,3 +1,4 @@
+import 'package:delivery_food/pages/details_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -272,6 +273,80 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         children: [
                           InkWell(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                return DetailsPage();
+                              },));
+                            },
+                            child: SizedBox(
+                                height: 280,
+                                width: 220,
+                                child: Stack(
+                                  children: [
+                                    Center(
+                                      child: Container(
+                                        height: 190,
+                                        width: 150,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(18),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 65,
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              Text('Yammy',
+                                                  style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500,
+                                                  )),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                'Pizza',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 10,
+                                              ),
+                                              Text(
+                                                '100',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: Colors
+                                                      .deepOrange.shade500,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      top: 20,
+                                      left: 5,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                                image:
+                                                    AssetImage('images/ca.png'),
+                                                fit: BoxFit.fill)),
+                                        height: 85,
+                                        width: 85,
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                          InkWell(
                             onTap: () {},
                             child: SizedBox(
                                 height: 280,
@@ -328,79 +403,7 @@ class _HomePageState extends State<HomePage> {
                                     Positioned(
                                       top: 20,
                                       left: 5,
-                                      child:
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    'images/ca.png'),
-                                                fit: BoxFit.fill)),
-                                        height: 85,
-                                        width: 85,
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                          InkWell(
-                            onTap: () {},
-                            child: SizedBox(
-                                height: 280,
-                                width: 220,
-                                child: Stack(
-                                  children: [
-                                    Center(
                                       child: Container(
-                                        height: 190,
-                                        width: 150,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                          BorderRadius.circular(18),
-                                        ),
-                                        child: Padding(
-                                          padding: const EdgeInsets.only(
-                                            top: 65,
-                                          ),
-                                          child: Column(
-                                            children: [
-                                              Text('Yammy',
-                                                  style: TextStyle(
-                                                    fontSize: 18,
-                                                    fontWeight: FontWeight.w500,
-                                                  )),
-                                              SizedBox(
-                                                height: 10,
-                                              ),
-                                              Text(
-                                                'Pizza',
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.w500,
-                                                  fontSize: 18,
-                                                ),
-                                              ),
-                                              SizedBox(
-                                                height: 10,
-                                              ),
-                                              Text(
-                                                '100',
-                                                style: TextStyle(
-                                                  fontSize: 16,
-                                                  fontWeight: FontWeight.w400,
-                                                  color: Colors
-                                                      .deepOrange.shade500,
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Positioned(
-                                      top: 20,
-                                      left: 5,
-                                      child:
-                                      Container(
                                         decoration: BoxDecoration(
                                             image: DecorationImage(
                                                 image: AssetImage(
@@ -427,7 +430,7 @@ class _HomePageState extends State<HomePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                           borderRadius:
-                                          BorderRadius.circular(18),
+                                              BorderRadius.circular(18),
                                         ),
                                         child: Padding(
                                           padding: const EdgeInsets.only(
@@ -470,12 +473,11 @@ class _HomePageState extends State<HomePage> {
                                     Positioned(
                                       top: 20,
                                       left: 5,
-                                      child:
-                                      Container(
+                                      child: Container(
                                         decoration: BoxDecoration(
                                             image: DecorationImage(
-                                                image: AssetImage(
-                                                    'images/pi.png'),
+                                                image:
+                                                    AssetImage('images/pi.png'),
                                                 fit: BoxFit.fill)),
                                         height: 85,
                                         width: 85,
@@ -498,7 +500,7 @@ class _HomePageState extends State<HomePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                           borderRadius:
-                                          BorderRadius.circular(18),
+                                              BorderRadius.circular(18),
                                         ),
                                         child: Padding(
                                           padding: const EdgeInsets.only(
@@ -541,12 +543,11 @@ class _HomePageState extends State<HomePage> {
                                     Positioned(
                                       top: 20,
                                       left: 5,
-                                      child:
-                                      Container(
+                                      child: Container(
                                         decoration: BoxDecoration(
                                             image: DecorationImage(
-                                                image: AssetImage(
-                                                    'images/bu.png'),
+                                                image:
+                                                    AssetImage('images/bu.png'),
                                                 fit: BoxFit.fill)),
                                         height: 85,
                                         width: 85,
